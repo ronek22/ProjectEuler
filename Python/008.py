@@ -1,3 +1,5 @@
+import time
+start_time = time.time()
 a="""
 73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
@@ -25,14 +27,19 @@ a = a.replace('\r', '').replace('\n', '')
 
 n = len(a)
 i = 0
-wynik = 0
+result = 0
 temp = 1
 
-#TO-ADD: if find 0, temp = 0, and i, index of 0 + 1
 while i < (n-13):
     for j in range(i,i+13):
+        if int(a[j]) == 0:
+            i = j
+            temp = 0
+            break
         temp*=int(a[j])
-    wynik = max(wynik,temp)
+    result = max(result,temp)
     temp = 1
     i+=1
-print wynik
+print result
+total_time = time.time() - start_time;
+print total_time
