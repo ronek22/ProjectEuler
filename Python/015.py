@@ -9,18 +9,25 @@ def countWays(n):
     for i in range(n-1,-1,-1):
         for j in range(n-1,-1,-1):
             Matrix[i][j] = Matrix[i+1][j]+Matrix[i][j+1]
-    print "FINAL:"
     printMatrix(Matrix)
     return Matrix[0][0]
 
 def printMatrix(tab):
     rows = len(tab)
     columns = len(tab[0])
-    for i in range(0,rows):
-        for j in range(0,columns):
-            print "%6d" % tab[i][j],
-        print ""
+    if(rows<12):
+        for i in range(0,rows):
+            for j in range(0,columns):
+                print "%6d" % tab[i][j],
+            print ""
+    else:
+        f = open('matrix015.txt','w')
+        for i in range(0,rows):
+            for j in range(0,columns):
+                 f.write("%13d" % tab[i][j],)
+            f.write('\n')
+        print "Matrix print into matrix015.txt file!"
 
-grid = 3
+grid = 20
 ways = countWays(grid)
 print "For %dx%d there are %d possible paths" % (grid,grid,ways)
