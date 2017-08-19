@@ -38,14 +38,15 @@ def isAbundantSum(n):
             return True
     return False
 
+# sets for this problem was significant faster
 abundants = set()
 suma = 0
-for i in range(1,28124):
+#its enough to iterate only 20161 times
+for i in range(1,20162):
     if abundantNumber(i):
         abundants.add(i)
     if isAbundantSum(i):
         continue
     suma+=i
-
 
 print suma
