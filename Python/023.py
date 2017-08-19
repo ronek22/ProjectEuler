@@ -38,14 +38,14 @@ def isAbundantSum(n):
             return True
     return False
 
-abundants = []
-for i in range(1,28123):
+abundants = set()
+suma = 0
+for i in range(1,28124):
     if abundantNumber(i):
-        abundants.append(i)
+        abundants.add(i)
+    if isAbundantSum(i):
+        continue
+    suma+=i
 
-notAbundantsSum = []
-for i in range(1,28123):
-    if not isAbundantSum(i):
-        notAbundantsSum.append(i)
 
-print sum(notAbundantsSum)
+print suma
