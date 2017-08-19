@@ -30,29 +30,22 @@ def abundantNumber(n):
         return True
     else:
         return False
+def isAbundantSum(n):
+    for i in abundants:
+        if i>n:
+            return False
+        if (n-i) in abundants:
+            return True
+    return False
 
 abundants = []
-for i in range(1,28124):
+for i in range(1,28123):
     if abundantNumber(i):
         abundants.append(i)
 
-isSumAbundant = False
-notSumAbundant = range(1,24)
-for i in range(25,28124):
-    notSumAbundant.append(i)
-    for x in range(0,len(abundants)):
-        if isSumAbundant:
-            isSumAbundant = False
-            break
-        if abundants[x]>i:
-            break
-        for y in range(x,len(abundants)):
-            suma=abundants[x]+abundants[y]
-            if suma==i:
-                notSumAbundant.pop()
-                isSumAbundant = True
-                break
-            if abundants[y]>i:
-                break
-print notSumAbundant
-print sum(notSumAbundant)
+notAbundantsSum = []
+for i in range(1,28123):
+    if not isAbundantSum(i):
+        notAbundantsSum.append(i)
+
+print sum(notAbundantsSum)
