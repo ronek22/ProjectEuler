@@ -11,17 +11,23 @@ primes = list(prime_sieve(10000))
 primes = primes[168:]
 primeSet = set(primes)
 
-# for x in primes:
-	
-
-
 for x in primes:
+	found = False
+	arithm = []
 	perm = list(int(''.join(x)) for x in permutations(str(x)))
 	primePerm = set()
 	for y in perm:
 		if y in primeSet:
 			primePerm.add(y)
-	print primePerm
-	raw_input()
+			primes.remove(y)
+			primeSet.remove(y)
+	primePerm = sorted(list(primePerm))
 	
+	for x in range(0,len(primePerm)-2):
+		third = primePerm[x+1]+(primePerm[x+1]-primePerm[x])
+		if third == primePerm[x+2]:
+			found = True
+			arithm.append([primePerm[x],primePerm[x+1],primePerm[x+2]])
 	
+	if found:
+		print str(arithm[0][0])+str(arithm[0][1])+str(arithm[0][2])	
