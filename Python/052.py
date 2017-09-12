@@ -1,21 +1,16 @@
-def isPermutation(x,y):
-    x,y = str(x),str(y)
-    return (len(x)==len(y)) and (sorted(x)==sorted(y))
+def is_permutation(x, y):
+    ''' Check if both numbers are permutations of each other'''
+    x, y = str(x), str(y)
+    return (len(x) == len(y)) and (sorted(x) == sorted(y))
 
-# def isP(x,y):
-#     x,y = str(x),str(y)
-#     if len(x)!=len(y):
-#         return False
 
-#
-# print isPermutation(2155,1255)
 x = 1
-cond = True
-while cond:
+COND = True
+while COND:
     for i in range(2,7):
-        if not isPermutation(x,i*x):
+        if not is_permutation(x,i*x):
             break
         if i==6:
             print x
-            cond = False
+            COND = False
     x+=1
