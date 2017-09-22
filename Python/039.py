@@ -1,3 +1,4 @@
+'''Integer right triangles'''
 maxSol = 0
 max_p = 0
 p = 110

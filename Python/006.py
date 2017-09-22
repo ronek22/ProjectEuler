@@ -1,3 +1,4 @@
+'''Sum square difference'''
 # Brute force solution
 """
 sum = 0

@@ -1,3 +1,4 @@
+'''Distinct primes factors'''
 import primefac
 
 def main():

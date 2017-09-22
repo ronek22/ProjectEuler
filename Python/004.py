@@ -1,3 +1,4 @@
+'''Largest palindrome product'''
 import time
 
 def isPalindrome(number):

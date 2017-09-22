@@ -1,3 +1,4 @@
+'''Lattice paths'''
 def countWays(n):
     w,h = n+1,n+1;
     Matrix = [[0 for x in range(w)] for y in range(h)]

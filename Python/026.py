@@ -1,3 +1,4 @@
+'''Reciprocal cycles'''
 from math import sqrt
 import os
 import time

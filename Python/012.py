@@ -1,3 +1,4 @@
+'''Highly divisible triangular number'''
 from math import sqrt
 # too slow for n > 200
 def simpleCountDivisors(n):

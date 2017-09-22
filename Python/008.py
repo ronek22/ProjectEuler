@@ -1,3 +1,4 @@
+'''Largest product in a series'''
 import time
 start_time = time.time()
 a="""

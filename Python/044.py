@@ -1,3 +1,4 @@
+'''Pentagon numbers'''
 #044
 from datetime import datetime
 

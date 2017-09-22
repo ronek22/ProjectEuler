@@ -1,3 +1,4 @@
+'''Smallest multiple'''
 def div2to20(number):
 	i = 2
 	while i<=20:

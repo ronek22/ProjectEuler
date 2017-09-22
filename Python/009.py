@@ -1,3 +1,4 @@
+'''Special Pythagorean triplet'''
 for a in range(0,333):
 	for b in range(a+1,500):
 		c = 1000 - a - b

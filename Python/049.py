@@ -1,3 +1,4 @@
+'''Prime permutations'''
 from itertools import permutations
 
 def prime_sieve(n):

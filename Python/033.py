@@ -1,3 +1,4 @@
+'''Digit cancelling fractions'''
 def commonDigit(x,y):
     if(x/10 == x%10 or y/10==y%10):
         return 0

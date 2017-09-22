@@ -1,3 +1,4 @@
+'''Circular primes'''
 # fast generate prime numbers
 def prime_sieve(n):
     sieve = [True] * (n//2)

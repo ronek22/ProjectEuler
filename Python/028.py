@@ -1,3 +1,4 @@
+'''Number spiral diagonals'''
 def diagSum(tab,x,y,n):
     if(x==y):
         return tab[x][y]

@@ -1,3 +1,4 @@
+'''Names scores'''
 def ch2int(c):
     #only works for big letters
     return ord(c)-64

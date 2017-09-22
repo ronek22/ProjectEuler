@@ -1,3 +1,4 @@
+'''Pandigital prime'''
 
 
 def isPandigital(n):

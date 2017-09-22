@@ -1,3 +1,4 @@
+'''Non-abundant sums'''
 import math
 #perfect number:     sum of its proper divisors = number
 #deficient number:   sum of its proper divisors < number

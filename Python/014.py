@@ -1,3 +1,4 @@
+'''Longest Collatz sequence'''
 def collatz_terms_rec(n,count=0):
     if(n==1):
         count+=1

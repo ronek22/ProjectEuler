@@ -1,3 +1,4 @@
+'''Quadratic primes'''
 from math import sqrt; from itertools import count,islice
 
 def isPrime(n):

@@ -1,3 +1,4 @@
+'''Amicable numbers'''
 import math
 def sumDivisors(n):
     listDiv = []

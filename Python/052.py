@@ -1,3 +1,4 @@
+'''Permuted multiples'''
 def is_permutation(x, y):
     ''' Check if both numbers are permutations of each other'''
     x, y = str(x), str(y)

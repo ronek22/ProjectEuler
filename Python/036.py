@@ -1,3 +1,4 @@
+'''Double-base palindromes'''
 def isPalindrome(x):
 	n = len(x)
 	i = 0

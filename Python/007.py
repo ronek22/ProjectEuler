@@ -1,3 +1,4 @@
+'''10001st prime'''
 from math import sqrt; from itertools import count,islice
 
 def isPrime(n):

@@ -1,3 +1,4 @@
+'''Pandigital multiples'''
 def isPandigital(n):
     for i in range(1,10):
         if str(i) not in n:

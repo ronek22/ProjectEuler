@@ -1,3 +1,4 @@
+'''Digit fifth powers'''
 find = []
 for i in range(2,1000000):
     num = str(i)

@@ -1,3 +1,4 @@
+'''Largest prime factor'''
 import math # learn more: https://python.org/pypi/Math
 
 """

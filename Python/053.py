@@ -1,3 +1,4 @@
+'''Combinatoric selections'''
 from math import factorial
 def comb(n, r):
     '''Return combination evaluation'''

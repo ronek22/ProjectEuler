@@ -1,3 +1,4 @@
+'''Pandigital products'''
 #21 s
 def isPandigital(n):
     for i in range(1,10):

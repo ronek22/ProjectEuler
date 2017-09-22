@@ -1,3 +1,4 @@
+'''Lexicographic permutations'''
 import itertools
 import time
 

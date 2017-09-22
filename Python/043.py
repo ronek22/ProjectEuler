@@ -1,3 +1,4 @@
+'''Sub-string divisibility'''
 from itertools import permutations
 
 pan = permutations("1234567890")

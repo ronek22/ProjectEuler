@@ -1,3 +1,4 @@
+'''Goldbach's other conjecture'''
 LIMIT = 10000
 def prime_sieve(n):
     sieve = [True] * (n//2)

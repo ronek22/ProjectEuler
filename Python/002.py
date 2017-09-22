@@ -1,3 +1,4 @@
+'''Even Fibonacci numbers'''
 # return value of nth fibonacci number
 def fibonacci(n):
 	if n==1:

@@ -1,3 +1,4 @@
+'''Poker hands'''
 from collections import Counter
 hand = (line.split() for line in open('p054_poker.txt'))  # generator
 values = {r: i for i, r in enumerate('23456789TJQKA', 2)}

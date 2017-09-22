@@ -1,3 +1,4 @@
+'''Consecutive prime sum'''
 def prime_sieve(n):
     sieve = [True] * (n//2)
     for i in xrange(3, int(n**0.5)+1,2):

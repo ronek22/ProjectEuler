@@ -1,3 +1,4 @@
+'''Factorial digit sum'''
 from math import factorial
 a = str(factorial(100))
 suma=0

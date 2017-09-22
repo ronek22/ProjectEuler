@@ -1,3 +1,4 @@
+'''Coin sums'''
 from itertools import combinations_with_replacement
 TARGET = 200
 coins = [1,2,5,10,20,50,100,200]
