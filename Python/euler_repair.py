@@ -1,5 +1,4 @@
-'''Spiral primes'''
-'''Spiral primes''''''Script to add problem subject to head of the Project Euler solutions'''
+'''Script to add problem subject to head of the Project Euler solutions'''
 import requests
 from lxml import html
 from math import ceil
