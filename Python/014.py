@@ -1,14 +1,4 @@
 '''Longest Collatz sequence'''
-def collatz_terms_rec(n,count=0):
-    if(n==1):
-        count+=1
-        return count
-    elif(n%2==0):
-        count+=1
-        return collatz_terms(n/2,count)
-    else:
-        count+=1
-        return collatz_terms(3*n+1,count)
 
 def collatz_terms_slower(n):
     count = 0
