@@ -1,5 +1,5 @@
 '''Spiral Primes'''
-from helper import isPrime
+from utility.helper import isPrime
 from math import ceil
 
 diag_num = 1
