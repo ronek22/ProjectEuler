@@ -21,7 +21,7 @@ print(pages)
 file_id = 0
 
 FILE_README = open("../../README.md", 'w')
-FILE_README.write("# PROJECT EULER\nExercises from Project Euler, just for training algorithms and python.\n")
+FILE_README.write("# PROJECT EULER\nExercises from Project Euler, just for training algorithms and python.\n\n")
 
 
 
